@@ -148,6 +148,8 @@ h2
   font-size: 14px
   font-weight: bold
   border: none
+  &:focus
+    box-shadow: none
 
 .btn-accent
   color: #000
@@ -221,7 +223,7 @@ header
 
 .btn-burger
   width: 20px
-  height: 20px
+  height: 14px
   position: relative
   flex-direction: column
   justify-content: space-between
@@ -553,15 +555,17 @@ strong
 .list-social
   display: flex
   align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
   li
-    margin: 0 13px 0 0
     &:last-child
       margin: 0
     a
       display: flex
       align-items: center
       font-weight: bold
-      font-size: 14px
+      font-size: 13px
 
 .social-link-icon
   fill: #fff
@@ -575,6 +579,86 @@ strong
     margin: 0 0 11px
     color: #3A3A3A
     font-size: 12px
+
+.mobile-menu
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  max-width: 290px
+  width: 100%
+  background: $accent
+  padding: 20px
+  z-index: 7
+  height: 100%
+  overflow-y: auto
+  box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5)
+  .navbar-menu
+    flex-direction: column
+  .navbar-item
+    margin: 0 0 10px
+  .navbar-link
+    text-align: left
+    font-size: 16px
+  .logo
+    margin: 0 auto 20px
+  .phone
+    margin: 0 auto 20px
+    text-align: center
+
+.btn-close
+  margin: 0 0 20px auto
+
+.btn-close, .close
+  position: relative
+  width: 20px
+  height: 20px
+  cursor: pointer
+  opacity: 1
+  z-index: 1
+  padding: 0
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 1px
+    height: 100%
+    background: #000
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.modal-header .close
+  padding: 0
+  margin: 0 0 10px auto
+
+.modal-header
+  flex-wrap: wrap
+  border: none
+  p
+    text-align: center
+    font-size: 14px
+    margin: 10px auto 0
+
+.modal-title
+  font-size: 24px
+  font-weight: bold
+  text-align: center
+  width: 100%
+  line-height: normal
+
+.modal-body
+  padding: 30px
+
+.modal
+  .form
+    max-width: 280px
+    width: 100%
+    margin: 0 auto
+    button
+      margin: 26px auto 0
 
 @import "media"
 // Всегда в конце
