@@ -184,6 +184,15 @@ h2
 .font-weight-normal
   font-weight: normal
 
+.mb-30
+  margin: 0 0 30px
+
+.mb-50
+  margin: 0 0 50px
+
+.container
+  max-width: 1160px
+
 //header
 header
   margin: 12px 0 47px
@@ -459,7 +468,7 @@ main
   width: 100%
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
   border-radius: 10px
-  padding: 22px 20px
+  padding: 22px 23px 23px 21px
   h3
     margin: 0 0 16px
     text-transform: uppercase
@@ -684,8 +693,26 @@ strong
   height: 77px
   max-width: 90px
 
-.mb-30
-  margin: 0 0 30px
+//.delivery
+.delivery-box
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 12px
+  h3
+    font-weight: bold
+    font-size: 24px
+    margin: 0 0 23px
+
+.delivery-box__content
+  width: calc(100% - 268px)
+  padding: 0 0 0 20px
+
+.delivery-box__img
+  width: 268px
+  height: 268px
+  border-radius: 10px
+
 
 @import "media"
 // Всегда в конце
