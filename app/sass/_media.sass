@@ -177,6 +177,19 @@
       &:last-child
         margin: 0 0 10px
 
+  .catalog-menu
+    margin: 0 0 30px
+    flex-direction: row
+    flex-wrap: wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    li
+      width: 33%
+
+  .catalog
+    margin: 0 0 70px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .main-img
@@ -285,6 +298,8 @@
         a
           font-size: 16px
 
+  .catalog
+    margin: 0 0 50px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
@@ -323,7 +338,8 @@
   .video-reviews
     margin: 40px 0
 
-
+  .catalog-menu li
+    width: 49%
 
 @media only screen and (max-width : 480px)
   header
@@ -382,6 +398,14 @@
   .portfolio
     margin: 0 0 50px
 
+  .catalog-menu-links__icon
+    width: 20px
+    min-width: 20px
+    margin: 0 10px 0 0
+
+  .catalog-menu-links
+    font-size: 13px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
   footer
@@ -411,3 +435,5 @@
   .contacts-page-wrapper .footer-box
     width: 100%
 
+  .catalog-menu li
+    width: 100%

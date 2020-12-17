@@ -907,6 +907,7 @@ strong
 //portfolio
 .portfolio
   margin: 0 0 94px
+
   h1
     margin: 0 0 26px
 
@@ -922,6 +923,7 @@ strong
   font-size: 14px
   color: #000000
   padding: 0 5px
+
   &:hover
     box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5)
     background: $accent
@@ -940,6 +942,7 @@ strong
   overflow: hidden
   margin: 0 0 18px
   height: 268px
+
   img
     width: 100%
     height: 100%
@@ -950,33 +953,44 @@ strong
   h1
     margin: 0 0 35px
     color: $accent
+
   .footer-box
     margin: 0 0 19px
     font-size: 24px
+
     &:last-child
       margin: 0
+
     h3
       font-size: 14px
       margin: 0 0 9px
+
     a
       color: #000
       font-weight: bold
+
     .phone.font-weight-normal
       margin: 9px 0 0
       font-size: 18px
+
   .footer-box-schedule
     margin: 0 0 35px
+
   .social-link-icon
     width: 33px
     height: 33px
     fill: $accent
+
   .list-social
     flex-direction: column
     align-items: flex-start
+
     li
       margin: 0 0 19px
+
       &:last-child
         margin: 0
+
       a
         font-size: 18px
 
@@ -996,14 +1010,18 @@ strong
   flex-wrap: wrap
   font-size: 12px
   margin: 102px 0 52px
+
   li
     margin: 0 25px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: $accent
       display: flex
       align-items: center
+
     .svg-icon
       fill: $accent
       margin: 0 4px 0 0
@@ -1012,6 +1030,95 @@ strong
 
 .text-decoration
   text-decoration: underline
+
+//catalog page
+.catalog
+  margin: 0 0 120px
+
+  h1
+    margin: 0 0 35px
+
+.catalog-menu
+  width: 100%
+
+  li
+    width: 100%
+    margin: 0 0 5px
+
+    &:last-child
+      margin: 0
+
+.catalog-menu-links
+  width: 100%
+  display: flex
+  align-items: center
+  background: #F9F9F9
+  border-radius: 10px
+  color: #000000
+  font-size: 14px
+  padding: 5px 5px 5px 20px
+  height: 54px
+  &:hover
+    color: #000
+    box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5)
+    background: $accent
+    .catalog-menu-links__icon
+      fill: #000000
+
+.catalog-menu-links.active
+  font-weight: bold
+  color: #000
+  box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5)
+  background: $accent
+  .catalog-menu-links__icon
+    fill: #000000
+
+.catalog-menu-links__icon
+  margin: 0 17px 0 0
+  fill: $accent
+  width: 26px
+  min-width: 26px
+  transition: .3s ease
+
+.product-card
+  width: 100%
+  height: 100%
+  background: #fff
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  padding: 12px 11px 17px
+  font-size: 18px
+
+.product-card__img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 245px
+  border-radius: 10px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.product-card__body
+  text-align: center
+  padding: 20px 0 0
+  .btn
+    margin: 0 auto
+
+.product-card__title
+  width: 100%
+  color: #000
+  text-transform: uppercase
+  
+.price
+  text-align: center
+  margin: 17px auto 29px
+  font-weight: bold
+
+
 
 @import "media"
 // Всегда в конце

@@ -1148,6 +1148,104 @@ strong {
 .text-decoration {
   text-decoration: underline; }
 
+.catalog {
+  margin: 0 0 120px; }
+  .catalog h1 {
+    margin: 0 0 35px; }
+
+.catalog-menu {
+  width: 100%; }
+  .catalog-menu li {
+    width: 100%;
+    margin: 0 0 5px; }
+    .catalog-menu li:last-child {
+      margin: 0; }
+
+.catalog-menu-links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F9F9F9;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 14px;
+  padding: 5px 5px 5px 20px;
+  height: 54px; }
+  .catalog-menu-links:hover {
+    color: #000;
+    -webkit-box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5);
+            box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5);
+    background: #F9B35E; }
+    .catalog-menu-links:hover .catalog-menu-links__icon {
+      fill: #000000; }
+
+.catalog-menu-links.active {
+  font-weight: bold;
+  color: #000;
+  -webkit-box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5);
+          box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5);
+  background: #F9B35E; }
+  .catalog-menu-links.active .catalog-menu-links__icon {
+    fill: #000000; }
+
+.catalog-menu-links__icon {
+  margin: 0 17px 0 0;
+  fill: #F9B35E;
+  width: 26px;
+  min-width: 26px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+
+.product-card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 12px 11px 17px;
+  font-size: 18px; }
+
+.product-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 245px;
+  border-radius: 10px;
+  overflow: hidden; }
+  .product-card__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.product-card__body {
+  text-align: center;
+  padding: 20px 0 0; }
+  .product-card__body .btn {
+    margin: 0 auto; }
+
+.product-card__title {
+  width: 100%;
+  color: #000;
+  text-transform: uppercase; }
+
+.price {
+  text-align: center;
+  margin: 17px auto 29px;
+  font-weight: bold; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1306,7 +1404,28 @@ strong {
     .list-document li {
       margin: 0 0 10px; }
       .list-document li:last-child {
-        margin: 0 0 10px; } }
+        margin: 0 0 10px; }
+  .catalog-menu {
+    margin: 0 0 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .catalog-menu li {
+      width: 33%; }
+  .catalog {
+    margin: 0 0 70px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1394,7 +1513,9 @@ strong {
     .contacts-page .footer-box a {
       font-size: 16px; }
   .contacts-page .list-social li a {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .catalog {
+    margin: 0 0 50px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -1421,7 +1542,9 @@ strong {
   footer .logo {
     margin: 0 auto 10px; }
   .video-reviews {
-    margin: 40px 0; } }
+    margin: 40px 0; }
+  .catalog-menu li {
+    width: 49%; } }
 
 @media only screen and (max-width: 480px) {
   header .phone {
@@ -1469,7 +1592,13 @@ strong {
     .reviews-slider__box .reviews-box__head {
       margin: 0 0 15px; }
   .portfolio {
-    margin: 0 0 50px; } }
+    margin: 0 0 50px; }
+  .catalog-menu-links__icon {
+    width: 20px;
+    min-width: 20px;
+    margin: 0 10px 0 0; }
+  .catalog-menu-links {
+    font-size: 13px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -1490,4 +1619,6 @@ strong {
   .portfolio-item {
     height: 220px; }
   .contacts-page-wrapper .footer-box {
+    width: 100%; }
+  .catalog-menu li {
     width: 100%; } }
