@@ -110,6 +110,7 @@ input
   box-sizing: border-box
   width: 100%
   height: 40px
+
   &::placeholder
     color: $accent
 
@@ -118,6 +119,7 @@ label
   display: block
   width: 100%
   margin: 0 0 12px
+
   &:last-child
     margin: 0
 
@@ -149,6 +151,7 @@ h2
   font-size: 14px
   font-weight: bold
   border: none
+
   &:focus
     box-shadow: none
 
@@ -443,9 +446,11 @@ main
 //callback
 .callback
   margin: 92px 0 99px
+
   h2
     margin: 0 0 24px
     text-align: left
+
   .img-wrapper
     max-height: 431px
 
@@ -469,20 +474,24 @@ main
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
   border-radius: 10px
   padding: 22px 23px 23px 21px
+
   h3
     margin: 0 0 16px
     text-transform: uppercase
     font-size: 18px
     font-weight: bold
+
   p
     font-size: 14px
     margin: 0 0 29px
 
 .callback-wrapper
   position: relative
-  >*
+
+  > *
     position: relative
     z-index: 2
+
   &:before
     content: ''
     position: absolute
@@ -497,8 +506,10 @@ main
 //reviews
 .reviews
   margin: 0 0 60px
+
   h2
     margin: 0 auto 43px
+
   .btn
     margin: 0 auto
 
@@ -528,6 +539,7 @@ main
   min-width: 52px
   height: 52px
   margin: 0 17px 0 0
+
   img
     width: 100%
     height: 100%
@@ -547,16 +559,21 @@ footer
   background: $accent
   padding: 34px 0 33px
   font-size: 14px
+
   a
     color: #000
     font-weight: bold
+
     &:hover
       color: #fff
+
   .font-weight-normal
     font-weight: normal
+
   .phone
     font-size: 14px
     margin: 0 0 4px
+
     &:last-child
       margin: 0
 
@@ -569,9 +586,11 @@ strong
   flex-wrap: wrap
   justify-content: space-between
   width: 100%
+
   li
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -604,15 +623,20 @@ strong
   height: 100%
   overflow-y: auto
   box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5)
+
   .navbar-menu
     flex-direction: column
+
   .navbar-item
     margin: 0 0 10px
+
   .navbar-link
     text-align: left
     font-size: 16px
+
   .logo
     margin: 0 auto 20px
+
   .phone
     margin: 0 auto 20px
     text-align: center
@@ -628,6 +652,7 @@ strong
   opacity: 1
   z-index: 1
   padding: 0
+
   &:before, &:after
     content: ''
     position: absolute
@@ -636,8 +661,10 @@ strong
     width: 1px
     height: 100%
     background: #000
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -648,6 +675,7 @@ strong
 .modal-header
   flex-wrap: wrap
   border: none
+
   p
     text-align: center
     font-size: 14px
@@ -668,6 +696,7 @@ strong
     max-width: 280px
     width: 100%
     margin: 0 auto
+
     button
       margin: 26px auto 0
 
@@ -682,6 +711,7 @@ strong
   padding: 26px 60px 25px 42px
   font-size: 12px
   height: 100%
+
   h3
     margin: 27px 0 18px
     width: 100%
@@ -699,6 +729,7 @@ strong
   align-items: flex-start
   flex-wrap: wrap
   font-size: 12px
+
   h3
     font-weight: bold
     font-size: 24px
@@ -725,20 +756,26 @@ strong
   background: #fff
   padding: 25px 24px 23px
   font-size: 12px
+
   .reviews-box__name
     font-size: 18px
+
   .reviews-box__photo
     width: 54px
     height: 54px
     min-width: 54px
     margin: 0
+
   .reviews-box__head
     margin: 0 0 28px
+
   .reviews-box__body
     line-height: 11px
     font-size: 12px
+
     p
       margin: 0 0 11px
+
       &:last-child
         margin: 0
 
@@ -750,6 +787,7 @@ strong
   border-radius: 10px
   width: 240px
   height: 240px
+
   img
     width: 100%
     height: 100%
@@ -773,16 +811,20 @@ strong
   position: relative
   width: 100%
   bottom: 0
+
   li
     width: 20px
     height: 20px
     border-radius: 50%
     background: #fff
     margin: 0 8px 0 0
+
     &:last-child
       margin: 0
+
     button
       display: none
+
   .slick-active
     background: $accent
 
@@ -800,6 +842,7 @@ strong
   position: relative
   width: 100%
   padding: 0 96px
+
   .slick-list
     z-index: 2
 
@@ -812,10 +855,12 @@ strong
   margin: 0 auto
   border-radius: 10px
   z-index: 2
-  >img
+
+  > img
     width: 100%
     height: 100%
     object-fit: cover
+
   iframe
     width: 100%
     height: 100%
@@ -825,7 +870,7 @@ strong
   z-index: 1
   top: 50%
   left: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   cursor: pointer
   width: 62px
   height: 67px
@@ -841,22 +886,64 @@ strong
   display: flex
   align-items: center
   z-index: 1
+
   &:before
     display: none
+
   &:hover, &:focus
     background: $accent
+
   svg
     width: 14px
 
 .slick-prev
   left: 0
   justify-content: flex-start
-  
+
 .slick-next
   right: 0
   justify-content: flex-end
-  
 
+//portfolio
+.portfolio
+  margin: 0 0 94px
+  h1
+    margin: 0 0 26px
+
+.filter-portfolio
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  margin: 0 0 55px
+  background: #F9F9F9
+  border-radius: 10px
+  height: 54px
+  font-size: 14px
+  color: #000000
+  padding: 0 5px
+  &:hover
+    box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5)
+    background: $accent
+    color: #000
+
+.filter-portfolio.active
+  box-shadow: 0 4px 16px rgba(249, 179, 94, 0.5)
+  background: $accent
+  font-weight: bold
+
+.portfolio-item
+  border-radius: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  margin: 0 0 18px
+  height: 268px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 @import "media"
 // Всегда в конце
