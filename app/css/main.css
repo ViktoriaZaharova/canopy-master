@@ -146,7 +146,8 @@ h1 {
   width: 100%;
   font-size: 36px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0 0 55px; }
 
 h2 {
   -ms-touch-action: auto;
@@ -289,7 +290,8 @@ header {
     background: #F9B35E; }
 
 main h1 {
-  font-size: 72px; }
+  font-size: 72px;
+  margin: 0; }
 
 .main-content {
   color: #fff;
@@ -786,6 +788,31 @@ strong {
   .modal .form button {
     margin: 26px auto 0; }
 
+.payment {
+  margin: 0 0 89px; }
+
+.payment-box {
+  background: #fff;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 26px 60px 25px 42px;
+  font-size: 12px;
+  height: 100%; }
+  .payment-box h3 {
+    margin: 27px 0 18px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px; }
+
+.payment-box__icon {
+  fill: #F9B35E;
+  height: 77px;
+  max-width: 90px; }
+
+.mb-30 {
+  margin: 0 0 30px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -927,7 +954,19 @@ strong {
   .reviews {
     margin: 0 0 40px; }
     .reviews h2 {
-      margin: 0 auto 30px; } }
+      margin: 0 auto 30px; }
+  .payment-box {
+    padding: 20px; }
+    .payment-box h3 {
+      font-size: 20px;
+      margin: 20px 0; }
+  .payment-box__icon {
+    height: 60px;
+    max-width: 80px; }
+  .payment {
+    margin: 0 0 40px; }
+  h1 {
+    margin: 0 0 30px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -940,6 +979,8 @@ strong {
       font-size: 16px; }
   .btn {
     max-width: 140px; }
+  h1 {
+    font-size: 30px; }
   h2 {
     font-size: 26px;
     margin: 0 auto 25px; }
