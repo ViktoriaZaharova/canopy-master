@@ -1246,6 +1246,82 @@ strong {
   margin: 17px auto 29px;
   font-weight: bold; }
 
+.product-page {
+  margin: 17px 0 86px; }
+  .product-page h1 {
+    font-size: 24px;
+    margin: 0 0 13px; }
+
+.product-content .btn {
+  margin: 24px 0 0; }
+
+.article {
+  font-size: 14px; }
+
+.product-page-box {
+  margin: 37px 0 0;
+  font-size: 24px;
+  font-weight: bold; }
+  .product-page-box h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #F9B35E;
+    margin: 0 0 9px; }
+
+.price-product {
+  font-size: 36px; }
+
+.links-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F9B35E;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 30px; }
+  .links-next:hover {
+    color: #000; }
+
+.links-next-icon {
+  width: 6px;
+  height: 13px;
+  margin: 0 9px 0 0; }
+
+.product-photo {
+  height: 358px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .product-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.product-info {
+  font-size: 14px;
+  margin: 49px 0 0; }
+  .product-info p {
+    margin: 0 0 10px;
+    line-height: 13px; }
+    .product-info p:last-child {
+      margin: 0; }
+  .product-info h3 {
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+    margin: 0 0 30px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1515,7 +1591,16 @@ strong {
   .contacts-page .list-social li a {
     font-size: 16px; }
   .catalog {
-    margin: 0 0 50px; } }
+    margin: 0 0 50px; }
+  .product-photo {
+    height: auto;
+    margin: 0 auto 30px; }
+  .product-page-box {
+    margin: 25px 0 0; }
+  .product-page {
+    margin: 0 0 40px; }
+  .price-product {
+    font-size: 30px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
