@@ -33,10 +33,26 @@ $('.video-reviews-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg width="20" height="35" viewBox="0 0 20 35" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
         '    <path d="M3 3L17 17.5L3 32" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
         '</svg>\n</button>'
-})
+});
 
 $('.video-box').hover(function (){
     $(this).find('.btn-play').fadeToggle();
+});
+
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
 });
 
 // Инициализация карты
@@ -81,3 +97,5 @@ function init () {
         //Линейка масштаба
         .add(new ymaps.control.ScaleLine());
 }
+
+

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Навес мастер</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+
+  <a href="tel:+78004464554" class="phone">8 800 446 45 54</a>
+
+  <ul class="navbar-nav navbar-menu">
+    <li class="navbar-item"><a href="catalog.html" class="navbar-link">Каталог</a></li>
+    <li class="navbar-item"><a href="payment.html" class="navbar-link">Оплата</a></li>
+    <li class="navbar-item"><a href="delivery.html" class="navbar-link">Доставка</a></li>
+    <li class="navbar-item"><a href="reviews.html" class="navbar-link">Отзывы</a></li>
+    <li class="navbar-item"><a href="portfolio.html" class="navbar-link">Наши работы</a></li>
+    <li class="navbar-item"><a href="contacts.html" class="navbar-link">Контакты</a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="header-wrapper">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+          <ul class="navbar-nav navbar-menu">
+            <li class="navbar-item"><a href="catalog.html" class="navbar-link">Каталог</a></li>
+            <li class="navbar-item"><a href="payment.html" class="navbar-link">Оплата</a></li>
+            <li class="navbar-item"><a href="delivery.html" class="navbar-link">Доставка</a></li>
+            <li class="navbar-item"><a href="reviews.html" class="navbar-link">Отзывы</a></li>
+            <li class="navbar-item"><a href="portfolio.html" class="navbar-link">Наши работы</a></li>
+            <li class="navbar-item"><a href="contacts.html" class="navbar-link">Контакты</a></li>
+          </ul>
+
+          <a href="tel:+78004464554" class="phone">8 800 446 45 54</a>
+
+          <button class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Позвоните мне</button>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="checkout">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Оформление заказа</h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12 col-md-7 col-lg-8">
+
+        <form method="post" class="form-checkout">
+          <div class="form-checkout__box">
+            <div class="form-checkout__box-head">
+              <h3>Даные для заполнения</h3>
+            </div>
+
+            <div class="form-checkout__box-item">
+              <h4>Способ доставки</h4>
+              <ul class="radio-list">
+                <li>
+                  <label class="radio">
+                    <input class="radio-inp" type="radio" name="radio2" checked>
+                    <span class="radio-custom"></span>
+                    <span class="label">Самовывоз</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input class="radio-inp" type="radio" name="radio2">
+                    <span class="radio-custom"></span>
+                    <span class="label">Доставка</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-checkout__box-item form-checkout__box-item-address">
+              <div class="delivery-fields">
+                <h4>Серия паспорта</h4>
+                <div class="label-wrapper">
+                  <label><input type="text" placeholder="" name="series_doc" required></label>
+                  <div class="label-inp-status active">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <h4>Номер паспорта</h4>
+                <div class="label-wrapper">
+                  <label><input type="text" placeholder="" name="number_doc" required></label>
+                  <div class="label-inp-status">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <h4>Дата выдачи паспорта</h4>
+                <div class="label-wrapper">
+                  <label><input type="text" placeholder="" name="date_doc" required></label>
+                  <div class="label-inp-status">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <h4>Кем выдан паспорт</h4>
+                <div class="label-wrapper">
+                  <label><input type="text" placeholder="" name="info_doc"></label>
+                  <div class="label-inp-status">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <h4>Адрес регистрации по паспорту</h4>
+                <div class="label-wrapper">
+                  <label><input type="text" placeholder="" name="address"></label>
+                  <div class="label-inp-status">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="address-question">
+                <div class="address-question__title">
+                  <p>Информация необходима для заключения договора
+                    Ваш город доставки Пенза?</p>
+                  <p>(При заказе от 10000 рублей бесплатная доставка по г. Пенза)</p>
+                </div>
+                <ul class="radio-list">
+                  <li>
+                    <label class="radio">
+                      <input class="radio-inp" type="radio" name="radio2" checked>
+                      <span class="radio-custom"></span>
+                      <span class="label">Да</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input class="radio-inp" type="radio" name="radio2">
+                      <span class="radio-custom"></span>
+                      <span class="label">
+Нет</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="address-question">
+                <div class="address-question__title">
+                  <p>Доставка по области оплачивается по факту доставки, исходя из стоимости 30 руб. За 1 км.</p>
+                </div>
+                <h4>Адрес</h4>
+                <div class="label-wrapper">
+                  <label><input type="text" placeholder="" name="address_delivery"></label>
+                  <div class="label-inp-status">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-checkout__box-item">
+              <h4>Покупатель</h4>
+              <div class="label-wrapper">
+                <label><input type="text" placeholder="ФИО" name="name"></label>
+                <div class="label-inp-status active">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#checkbox"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="label-wrapper">
+                <label><input type="text" placeholder="Телефон" name="phone" required></label>
+                <div class="label-inp-status">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#checkbox"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="label-wrapper">
+                <label><input type="text" placeholder="Email" name="mail" required></label>
+                <div class="label-inp-status">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#checkbox"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-checkout__box-item">
+              <h4>Комментарий</h4>
+              <label><textarea name="message"></textarea></label>
+            </div>
+
+
+          </div>
+
+          <div class="form-checkout__box-total">
+            <div class="form-checkout__box-item">
+              <h4>Товары в заказе</h4>
+
+              <div class="row product-line">
+                <div class="col-lg-4 col-sm-6">
+                  <a href="#" class="product-line__name">НАВЕС РАЗБОРНЫЙ</a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="amount">
+                    <p>количество</p>
+                    <span class="down">-</span>
+                    <input type="text" value="1"/>
+                    <span class="up">+</span>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                  <div class="product-sum">20 000 р</div>
+                </div>
+                <div class="col-lg-2 col-6">
+                  <a href="#" class="links-delete">Удалить</a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="form-checkout__box-item">
+              <h4>Способ оплаты</h4>
+              <ul class="radio-list">
+                <li>
+                  <label class="radio">
+                    <input class="radio-inp" type="radio" name="radio" checked>
+                    <span class="radio-custom"></span>
+                    <span class="label">Оплата онлайн</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input class="radio-inp" type="radio" name="radio">
+                    <span class="radio-custom"></span>
+                    <span class="label">Оплата наличными</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <button type="submit" class="btn btn-accent">Оформить заказ</button>
+          </div>
+
+
+        </form>
+
+      </div>
+
+      <div class="col-12 col-md-5 col-lg-4">
+        <div class="confirm-total">
+          <div class="confirm-total-line">
+            <p>Товаров на</p><span>20 000 р</span>
+          </div>
+          <div class="confirm-total-line">
+            <p>В т.ч. НДС, 20%</p><span>4 000 р</span>
+          </div>
+          <div class="confirm-total-line">
+            <p>Способ доставки</p><span>Самовывоз</span>
+          </div>
+          <div class="confirm-total-line">
+            <p>Итого</p><span>20 000 р</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-3 col-lg-1">
+        <a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-lg-2">
+        <div class="footer-box">
+          <h3>Наши телефоны</h3>
+          <a href="tel:+78004464554" class="phone">8 800 446 45 54</a>
+          <a href="tel:+74951874612" class="phone font-weight-normal">8 (495) 187-46-12</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-5 col-lg-3 order-lg-1">
+        <div class="footer-box footer-box-social">
+          <h3>мы в соц сетях</h3>
+
+          <ul class="list-social">
+            <li><a href="#" class="social-link">
+              <svg class="social-link-icon svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+              <span class="social-link-text">navesmaste_ru</span>
+            </a></li>
+            <li><a href="whatsapp://send?phone=+79374047187" class="social-link">
+              <svg class="social-link-icon svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+              <span class="social-link-text">89374047187</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="wrapper-row">
+          <div class="footer-box">
+            <h3>Пишите нам </h3>
+            <a href="mailto:info@navesmaste.ru" class="mail">info@navesmaste.ru</a>
+          </div>
+
+          <div class="footer-box">
+            <h3>Адрес производства</h3>
+            <strong>Москва, ул. Ленина, 237в</strong>
+          </div>
+
+          <div class="footer-box">
+            <h3>Режим работы</h3>
+            <strong>пн-вс 9:00-18:00</strong>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modalCall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title">Оставьте ваши
+          данные</h5>
+        <p>и наши менеджеры свяжутся с вами в течении 30 минут</p>
+
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label><input type="text" placeholder="Имя" name="name"></label>
+          <label><input type="text" placeholder="Телефон" name="phone" required></label>
+          <label><input type="text" placeholder="E-mail" name="mail" required></label>
+          <button type="submit" class="btn btn-accent">Позвоните мне</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
