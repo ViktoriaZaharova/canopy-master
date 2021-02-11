@@ -190,9 +190,13 @@ h2 {
     background: #ee952d; }
 
 .phone {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #000; }
+
+.btn-basket {
+  width: 30px;
+  height: 30px; }
 
 .logo {
   display: -webkit-box;
@@ -1851,7 +1855,7 @@ textarea {
     header .phone {
       font-size: 16px; }
   .btn {
-    max-width: 140px; }
+    max-width: 135px; }
   h1 {
     font-size: 30px; }
   h2 {
